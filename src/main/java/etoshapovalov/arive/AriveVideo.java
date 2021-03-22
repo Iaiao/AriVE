@@ -1,5 +1,6 @@
 package etoshapovalov.arive;
 
+import etoshapovalov.arive.render.AriveFragment;
 import etoshapovalov.arive.render.AriveRenderable;
 
 import java.io.File;
@@ -11,7 +12,7 @@ public class AriveVideo {
     private String rootPath;
 
     //TODO: Replace with AriveFragment
-    public List<AriveRenderable> fragments = new ArrayList<>();
+    public List<AriveFragment> fragments = new ArrayList<>();
     public AriveVideo(String rootPath){
         new File(rootPath).mkdir();
         this.rootPath = rootPath;
